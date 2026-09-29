@@ -1,0 +1,15 @@
+{
+  "currentRelease": "0.5.0",
+  "releases": [
+    {
+      "version": "0.5.0",
+      "updateTo": {
+        "version": "0.5.0",
+        "name": "0.5.0",
+        "url": "https://github.com/ficushq/tau-desktop-releases/releases/download/v0.5.0/Ficus-0.5.0-darwin-arm64.zip",
+        "sha256": "f112a71b6141acd40f833e0f01cbacb87dd3dd59c39b0ccd3bdfbfa1c6ad4aa1",
+        "size": 242640960
+      }
+    }
+  ]
+}
