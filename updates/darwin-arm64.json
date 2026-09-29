@@ -11,5 +11,9 @@
         "size": 240667796
       }
     }
-  ]
+  ],
+  "successor": {
+    "name": "Ficus Desktop",
+    "url": "https://ficus.sh/download/desktop/macos"
+  }
 }
