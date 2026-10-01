@@ -1,14 +1,14 @@
 {
-  "currentRelease": "0.5.1",
+  "currentRelease": "0.5.2",
   "releases": [
     {
-      "version": "0.5.1",
+      "version": "0.5.2",
       "updateTo": {
-        "version": "0.5.1",
-        "name": "0.5.1",
-        "url": "https://github.com/ficushq/tau-desktop-releases/releases/download/v0.5.1/Ficus-0.5.1-darwin-arm64.zip",
-        "sha256": "557a29befbd03452af4662139495fa15804cc89d92b7b85e361d487b4c99e97d",
-        "size": 243212831
+        "version": "0.5.2",
+        "name": "0.5.2",
+        "url": "https://github.com/ficushq/tau-desktop-releases/releases/download/v0.5.2/Ficus-0.5.2-darwin-arm64.zip",
+        "sha256": "9359b8b7b934b5325323b068383abb23c0bd6deef849a6ad20ffffea25786639",
+        "size": 243178331
       }
     }
   ]
