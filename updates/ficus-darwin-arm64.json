@@ -1,14 +1,14 @@
 {
-  "currentRelease": "0.5.10",
+  "currentRelease": "0.5.11",
   "releases": [
     {
-      "version": "0.5.10",
+      "version": "0.5.11",
       "updateTo": {
-        "version": "0.5.10",
-        "name": "0.5.10",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.10/Ficus-0.5.10-darwin-arm64.zip",
-        "sha256": "1ffe8430b47539c277dc51e200c9bd73e25b4bae8f7826a4772759fed37b7abc",
-        "size": 248143816
+        "version": "0.5.11",
+        "name": "0.5.11",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.11/Ficus-0.5.11-darwin-arm64.zip",
+        "sha256": "497e701e6537eb16947a00ee5c62d6e7612d2b0c19fbbbd4a2703435aec299b1",
+        "size": 248484861
       }
     }
   ]
