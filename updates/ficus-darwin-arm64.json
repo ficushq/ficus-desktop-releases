@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.13",
+  "currentRelease": "0.5.14",
   "releases": [
     {
-      "version": "0.5.13",
+      "version": "0.5.14",
       "updateTo": {
-        "version": "0.5.13",
-        "name": "0.5.13",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.13/Ficus-0.5.13-darwin-arm64.zip",
-        "sha256": "568bfbcf1b3236050d3142e892f5dd8234250b89f7dea07561e2ecaf9412465e",
-        "size": 249330209,
-        "notes": "## What's new\n\n- **A Software Update window.** Check for Updates now opens a window with the release notes, real download progress (with Cancel), and each step while Ficus installs. When Ficus reopens, it tells you the update installed. You'll see it from the next update after this one.\n- **Check the Core inside Ficus yourself.** The Core this app bundles is built and attested in public by ficushq/ficus. Run `ficus desktop verify` to check this app against that build, file by file. About Ficus and Settings → Desktop updates show which Core commit you have.\n- **Read handed-off files in reviews.** At a human-approval step, the review window shows the files the agent handed off, such as a design doc, not just its summary.\n- **Reviews look like reviews.** Work streams waiting at an approval step show on the Feed as a review, not as blocked.\n- **Windows behave.** Sign-in and setup windows can be dragged by their top edge, and large dialogs no longer sit under the window controls.\n- **Smaller fixes.** Squad workers route requests for new work streams to their manager instead of failing, and workflow step errors say what's actually wrong.\n\nDesktop source: `44189d08f725eb48db38996d5b8d8d58a5335225`\n\nBundled Core: `4fe32f45bd3aa4a276f71ba0d36635d79001d0a4`"
+        "version": "0.5.14",
+        "name": "0.5.14",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.14/Ficus-0.5.14-darwin-arm64.zip",
+        "sha256": "d817c74a479c1bfe0fed800cf651d9cf513b84cc1b7b6a15bb0c7dc75f55bbd8",
+        "size": 249672463,
+        "notes": "## What's new\n\n- **Trust a site's links.** When Ficus asks before opening a link in your browser, you can choose to always open links to that site without asking again.\n- **Monitors keep watching.** Background monitors that agents start now survive sandbox and Ficus restarts, can restart themselves if you allow it, and enforce their deadlines even while Ficus is down. Idle work streams with a live monitor show a Monitoring status instead of looking stalled.\n- **Per-agent secrets.** Give a Secret Store key to one agent's sandbox only. Sharing a secret with a whole squad or globally now requires read access to it, and stored secrets are redacted from streamed tool output, details and errors.\n- **Safer remote hosts.** Ficus asks you to confirm a remote host's SSH key instead of silently accepting it, flags known_hosts conflicts, and keeps the box's trusted entries when squad SSH material syncs again.\n- **Questions read like questions.** Pending agent questions float as a simple card at the end of chat, answers show as their own card with the option labels you picked, and one-tap reply suggestions appear for more plain-text questions.\n- **Browse an agent's workspace.** The Workspace tab opens an agent's private folder and can open a terminal in its own box.\n- **See what you spend.** Settings → Spend shows inference costs by agent and turn, and fits on phones.\n- **Better chat while tools run.** Tool-call arguments render live as they stream, images returned by tools show as thumbnails you can open, and the web inbox searches your whole archive.\n- **Smaller fixes.** Notification badges follow your theme, consultant drafts survive navigation, idle consultants and workers go dormant on their own, and long bash output no longer fills the host's disk.\n\nDesktop source: `5bd735ffb4b15ba68cb0f1949c4d465fe63aa262`\n\nBundled Core: `e9f878df8655d6d71f7bc4b85ce95c0ace2eaab8`"
       }
     }
   ]
