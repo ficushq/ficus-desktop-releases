@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.14",
+  "currentRelease": "0.5.15",
   "releases": [
     {
-      "version": "0.5.14",
+      "version": "0.5.15",
       "updateTo": {
-        "version": "0.5.14",
-        "name": "0.5.14",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.14/Ficus-0.5.14-darwin-arm64.zip",
-        "sha256": "d817c74a479c1bfe0fed800cf651d9cf513b84cc1b7b6a15bb0c7dc75f55bbd8",
-        "size": 249672463,
-        "notes": "## What's new\n\n- **Trust a site's links.** When Ficus asks before opening a link in your browser, you can choose to always open links to that site without asking again.\n- **Monitors keep watching.** Background monitors that agents start now survive sandbox and Ficus restarts, can restart themselves if you allow it, and enforce their deadlines even while Ficus is down. Idle work streams with a live monitor show a Monitoring status instead of looking stalled.\n- **Per-agent secrets.** Give a Secret Store key to one agent's sandbox only. Sharing a secret with a whole squad or globally now requires read access to it, and stored secrets are redacted from streamed tool output, details and errors.\n- **Safer remote hosts.** Ficus asks you to confirm a remote host's SSH key instead of silently accepting it, flags known_hosts conflicts, and keeps the box's trusted entries when squad SSH material syncs again.\n- **Questions read like questions.** Pending agent questions float as a simple card at the end of chat, answers show as their own card with the option labels you picked, and one-tap reply suggestions appear for more plain-text questions.\n- **Browse an agent's workspace.** The Workspace tab opens an agent's private folder and can open a terminal in its own box.\n- **See what you spend.** Settings → Spend shows inference costs by agent and turn, and fits on phones.\n- **Better chat while tools run.** Tool-call arguments render live as they stream, images returned by tools show as thumbnails you can open, and the web inbox searches your whole archive.\n- **Smaller fixes.** Notification badges follow your theme, consultant drafts survive navigation, idle consultants and workers go dormant on their own, and long bash output no longer fills the host's disk.\n\nDesktop source: `5bd735ffb4b15ba68cb0f1949c4d465fe63aa262`\n\nBundled Core: `e9f878df8655d6d71f7bc4b85ce95c0ace2eaab8`"
+        "version": "0.5.15",
+        "name": "0.5.15",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.15/Ficus-0.5.15-darwin-arm64.zip",
+        "sha256": "1ee488502fce5f396237d98c3780cbb1972b9019b4614a2b3f17d42e11988000",
+        "size": 249697983,
+        "notes": "## What's new\n\n- **Send feedback from the app.** Tell the Ficus team what's working and what isn't without leaving Ficus.\n- **SSH connections check who they're talking to.** Ficus now pins the host keys for machine hosts, exe.dev and memory git over SSH, and the setup installer does the same, instead of trusting a server the first time it sees it. Your squad's own SSH config takes precedence over the defaults.\n- **Fewer held GitHub edits.** Edits from trusted GitHub authors are no longer held for review.\n- **Clearer Assistant tasks.** Delegated tasks show their names on Assistant task chips.\n- **Smaller fixes.** The Inbox menu opens on hover like the other menus, \"Mark all read\" and \"Mark read\" look like the other quiet controls, and workflow run checks no longer depend on renewing the GitHub connection.\n\nDesktop source: `68f294a4c8ce2d2f490140f551c41c2d33356128`\n\nBundled Core: `d8989c5d5482a715148676f42e590061c3c953b3`"
       }
     }
   ]
