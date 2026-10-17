@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.15",
+  "currentRelease": "0.5.16",
   "releases": [
     {
-      "version": "0.5.15",
+      "version": "0.5.16",
       "updateTo": {
-        "version": "0.5.15",
-        "name": "0.5.15",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.15/Ficus-0.5.15-darwin-arm64.zip",
-        "sha256": "1ee488502fce5f396237d98c3780cbb1972b9019b4614a2b3f17d42e11988000",
-        "size": 249697983,
-        "notes": "## What's new\n\n- **Send feedback from the app.** Tell the Ficus team what's working and what isn't without leaving Ficus.\n- **SSH connections check who they're talking to.** Ficus now pins the host keys for machine hosts, exe.dev and memory git over SSH, and the setup installer does the same, instead of trusting a server the first time it sees it. Your squad's own SSH config takes precedence over the defaults.\n- **Fewer held GitHub edits.** Edits from trusted GitHub authors are no longer held for review.\n- **Clearer Assistant tasks.** Delegated tasks show their names on Assistant task chips.\n- **Smaller fixes.** The Inbox menu opens on hover like the other menus, \"Mark all read\" and \"Mark read\" look like the other quiet controls, and workflow run checks no longer depend on renewing the GitHub connection.\n\nDesktop source: `68f294a4c8ce2d2f490140f551c41c2d33356128`\n\nBundled Core: `d8989c5d5482a715148676f42e590061c3c953b3`"
+        "version": "0.5.16",
+        "name": "0.5.16",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.16/Ficus-0.5.16-darwin-arm64.zip",
+        "sha256": "d12be32707a810391023d7ff0cf8125e9cfbc4269e614ff3209ee57f273716b8",
+        "size": 249713003,
+        "notes": "## What's new\n\n- **Storage usage that keeps up.** Ficus now measures disk usage continuously in small steps instead of one long scan, so it no longer stalls on large machines and picks up where it left off after a restart. Settings → Storage shows how far the current pass has got, how fresh each figure is, and how much each workspace grew in the last 24 hours.\n- **Smaller fixes.** Storage scans skip past folders that can't be measured instead of retrying them indefinitely.\n\nDesktop source: `fac928109a8e4925d15ef7f9f5215700cb57f87f`\n\nBundled Core: `9d40fb78666b289be3f8738e22ef6355c8e7f11c`"
       }
     }
   ]
