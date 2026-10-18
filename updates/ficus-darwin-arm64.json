@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.16",
+  "currentRelease": "0.5.17",
   "releases": [
     {
-      "version": "0.5.16",
+      "version": "0.5.17",
       "updateTo": {
-        "version": "0.5.16",
-        "name": "0.5.16",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.16/Ficus-0.5.16-darwin-arm64.zip",
-        "sha256": "d12be32707a810391023d7ff0cf8125e9cfbc4269e614ff3209ee57f273716b8",
-        "size": 249713003,
-        "notes": "## What's new\n\n- **Storage usage that keeps up.** Ficus now measures disk usage continuously in small steps instead of one long scan, so it no longer stalls on large machines and picks up where it left off after a restart. Settings → Storage shows how far the current pass has got, how fresh each figure is, and how much each workspace grew in the last 24 hours.\n- **Smaller fixes.** Storage scans skip past folders that can't be measured instead of retrying them indefinitely.\n\nDesktop source: `fac928109a8e4925d15ef7f9f5215700cb57f87f`\n\nBundled Core: `9d40fb78666b289be3f8738e22ef6355c8e7f11c`"
+        "version": "0.5.17",
+        "name": "0.5.17",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.17/Ficus-0.5.17-darwin-arm64.zip",
+        "sha256": "0ef012d6a2f4814b0ba50750c2d1e5699366bf661dad28f5a675e110f4e43a7c",
+        "size": 249751000,
+        "notes": "## What's new\n\n- **Friendly addresses for local apps.** Give a local app a short, unique alias and open it at its own hostname instead of a generated address.\n- **Local apps that use WebSockets and their own sign-in.** The local app proxy now carries WebSocket connections reliably, closing them when access ends and keeping them alive with heartbeats. Apps that send their own Authorization header get it passed through on their own address.\n- **Restart means restart.** Restarting a local app always relaunches its command, and if a restart, stop or archive fails, the Local apps panel tells you why.\n- **More dependable apps and monitors.** Ficus runs local apps and monitors with its own pinned tmux, so a different tmux version already on the machine no longer gets in the way.\n- **Squad memory on by default.** New squads get shared memory from the start, and the manager looks after which documentation gets indexed.\n- **Smaller fixes.** The documentation now covers WebSocket support for local apps.\n\nDesktop source: `6218d676445f3d045df42b86263de9ff70f429dc`\n\nBundled Core: `c3f714ea0f6c4edf12cfa01f357d66f25ec922cf`"
       }
     }
   ]
