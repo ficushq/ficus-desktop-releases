@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.19",
+  "currentRelease": "0.5.20",
   "releases": [
     {
-      "version": "0.5.19",
+      "version": "0.5.20",
       "updateTo": {
-        "version": "0.5.19",
-        "name": "0.5.19",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.19/Ficus-0.5.19-darwin-arm64.zip",
-        "sha256": "7efd269c655cb50bd672f9af20cfed88748a8f779aeff9570d9e570209bbb114",
-        "size": 249742023,
-        "notes": "## What's new\n\n- **Native text menus.** Right-click text or a field in Desktop windows for the usual copy, paste, undo and selection actions, plus Copy Link Address for links.\n- **Fewer false firewall warnings.** Legitimate CLI help, agent documentation and mixed shell output are better distinguished from instructions trying to redirect an agent. This reduces false positives without exempting help or documentation from screening.\n- **Local BigBrain vaults for self-hosted Ficus.** Operators can explicitly connect an approved BigBrain vault on the same Core host. This is self-hosted, same-host support only—not a hosted service, remote-vault bridge or access to vaults on another device.\n- **No automatic transcript exports.** Automatic transcript capture and its background delivery have been removed, with no automatic summary replacement. Ordinary conversation history and manual downloads remain available.\n- **Limited evaluation access.** Operators can separately authorize workers to evaluate decision models without handing them provider keys or access to provider settings. Evaluation access is not granted automatically.\n- **More accurate Anthropic recovery signals.** A successful credential probe no longer clears unrelated credit, rate-limit, network or generation failures. Persisted-state and alert-churn regressions are covered; the original restart-specific production trigger was not reproduced.\n- **Smaller fixes.** Recovery checks keep account boundaries and retry deadlines intact, while successful generation can still clear a failure normally.\n\n**Upgrade note:** This is a forward-only database change that removes the retired automatic-export schema. Use the supported bundled Desktop update so the API and worker move together; do not leave an old exporter worker running. Older exporter builds are not rollback-compatible with the migrated database.\n\nDesktop source: `5ea5613a44ce23855687ead0f7a2f4513b283542`\n\nBundled Core: `57a423961feb8a37b1a37b2b1326fc12572b4139`"
+        "version": "0.5.20",
+        "name": "0.5.20",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.20/Ficus-0.5.20-darwin-arm64.zip",
+        "sha256": "ad22c37a8ebcde93834cea2d95d7449da1e7b8fc46de6f25c91f0784627eb9de",
+        "size": 257111330,
+        "notes": "## What's new\n\n- **Set your public address in Settings.** Administrators can now change the server's public address under Settings → Administration → Mobile & Pro, and the change takes effect without a restart. On Desktop, the local instance no longer locks this setting, so you can set an address instead of being told to edit `APP_URL`. The address you save is kept across quit and relaunch.\n- **Add a passkey for another address.** If your server's address changes, add a passkey for the new address from Settings → Account → Passkeys. You confirm with an existing passkey and get a one-time link or code. Your other passkeys and sessions stay as they are, with no account recovery needed.\n- **BigBrain on the Desktop local instance.** The local BigBrain vault connector can now be set up on the Ficus that Desktop runs on your Mac, following the local setup guide. End-to-end use with the BigBrain app on a packaged Mac install has not been verified yet. Instances that can't support it show why the connector is unavailable.\n- **Shared BigBrain vaults on Ficus Cloud.** Ficus Cloud servers can host managed shared BigBrain vaults that people write to with the BigBrain app and agents read from, only for vaults you assign to a squad.\n- **More reliable monitors.** Agents can choose whether a background monitor runs in their own box or the squad's, and a monitor that can't start now reports the real error instead of retrying as if the machine had restarted.\n- **Smaller fixes.** Squad Home shows the manager above active work, the composer's context ring tracks a live turn, task updates in the Assistant are tidier, and GitHub edit attribution handles more title histories.\n\nDesktop source: `8faec06961e4bcd540069074f7694e12618897b0`\n\nBundled Core: `da82583205f8ff571e58723de9415e5a911e25eb`"
       }
     }
   ]
