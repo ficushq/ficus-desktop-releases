@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.18",
+  "currentRelease": "0.5.19",
   "releases": [
     {
-      "version": "0.5.18",
+      "version": "0.5.19",
       "updateTo": {
-        "version": "0.5.18",
-        "name": "0.5.18",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.18/Ficus-0.5.18-darwin-arm64.zip",
-        "sha256": "45f817343487e0e1985af130fbd347444d40f8e735c4762697919652bbcba70b",
-        "size": 249755992,
-        "notes": "## What's new\n\n- **More accurate storage totals.** Shared files, including hard-linked dependency caches, no longer inflate workspace sizes. Storage shows when a total is approximate, and growth figures use exact measurements.\n- **Quiet monitors no longer look stalled.** Ficus checks whether a background monitor is still running even when it has nothing to print, so a healthy, silent monitor doesn't trigger a false squad-stall alert.\n- **Check database health.** The new `/health/db` endpoint lets you check that Ficus can query its database, separately from whether the app is running.\n- **Smaller fixes.** Storage scans pause between chunks to reduce background load, and folder breakdowns explain why their sizes can add up to more than a workspace's total.\n\nDesktop source: `7897c1658df3aabf6c18d612e45058e9d68faded`\n\nBundled Core: `91810803ec8690ca372086f92ec3eac5e4d097f0`"
+        "version": "0.5.19",
+        "name": "0.5.19",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.19/Ficus-0.5.19-darwin-arm64.zip",
+        "sha256": "7efd269c655cb50bd672f9af20cfed88748a8f779aeff9570d9e570209bbb114",
+        "size": 249742023,
+        "notes": "## What's new\n\n- **Native text menus.** Right-click text or a field in Desktop windows for the usual copy, paste, undo and selection actions, plus Copy Link Address for links.\n- **Fewer false firewall warnings.** Legitimate CLI help, agent documentation and mixed shell output are better distinguished from instructions trying to redirect an agent. This reduces false positives without exempting help or documentation from screening.\n- **Local BigBrain vaults for self-hosted Ficus.** Operators can explicitly connect an approved BigBrain vault on the same Core host. This is self-hosted, same-host support only—not a hosted service, remote-vault bridge or access to vaults on another device.\n- **No automatic transcript exports.** Automatic transcript capture and its background delivery have been removed, with no automatic summary replacement. Ordinary conversation history and manual downloads remain available.\n- **Limited evaluation access.** Operators can separately authorize workers to evaluate decision models without handing them provider keys or access to provider settings. Evaluation access is not granted automatically.\n- **More accurate Anthropic recovery signals.** A successful credential probe no longer clears unrelated credit, rate-limit, network or generation failures. Persisted-state and alert-churn regressions are covered; the original restart-specific production trigger was not reproduced.\n- **Smaller fixes.** Recovery checks keep account boundaries and retry deadlines intact, while successful generation can still clear a failure normally.\n\n**Upgrade note:** This is a forward-only database change that removes the retired automatic-export schema. Use the supported bundled Desktop update so the API and worker move together; do not leave an old exporter worker running. Older exporter builds are not rollback-compatible with the migrated database.\n\nDesktop source: `5ea5613a44ce23855687ead0f7a2f4513b283542`\n\nBundled Core: `57a423961feb8a37b1a37b2b1326fc12572b4139`"
       }
     }
   ]
