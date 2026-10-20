@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.20",
+  "currentRelease": "0.5.21",
   "releases": [
     {
-      "version": "0.5.20",
+      "version": "0.5.21",
       "updateTo": {
-        "version": "0.5.20",
-        "name": "0.5.20",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.20/Ficus-0.5.20-darwin-arm64.zip",
-        "sha256": "ad22c37a8ebcde93834cea2d95d7449da1e7b8fc46de6f25c91f0784627eb9de",
-        "size": 257111330,
-        "notes": "## What's new\n\n- **Set your public address in Settings.** Administrators can now change the server's public address under Settings → Administration → Mobile & Pro, and the change takes effect without a restart. On Desktop, the local instance no longer locks this setting, so you can set an address instead of being told to edit `APP_URL`. The address you save is kept across quit and relaunch.\n- **Add a passkey for another address.** If your server's address changes, add a passkey for the new address from Settings → Account → Passkeys. You confirm with an existing passkey and get a one-time link or code. Your other passkeys and sessions stay as they are, with no account recovery needed.\n- **BigBrain on the Desktop local instance.** The local BigBrain vault connector can now be set up on the Ficus that Desktop runs on your Mac, following the local setup guide. End-to-end use with the BigBrain app on a packaged Mac install has not been verified yet. Instances that can't support it show why the connector is unavailable.\n- **Shared BigBrain vaults on Ficus Cloud.** Ficus Cloud servers can host managed shared BigBrain vaults that people write to with the BigBrain app and agents read from, only for vaults you assign to a squad.\n- **More reliable monitors.** Agents can choose whether a background monitor runs in their own box or the squad's, and a monitor that can't start now reports the real error instead of retrying as if the machine had restarted.\n- **Smaller fixes.** Squad Home shows the manager above active work, the composer's context ring tracks a live turn, task updates in the Assistant are tidier, and GitHub edit attribution handles more title histories.\n\nDesktop source: `8faec06961e4bcd540069074f7694e12618897b0`\n\nBundled Core: `da82583205f8ff571e58723de9415e5a911e25eb`"
+        "version": "0.5.21",
+        "name": "0.5.21",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.21/Ficus-0.5.21-darwin-arm64.zip",
+        "sha256": "c6b88af6ea721829db012bce48c30dfdfeb7eb1e69ac49d6aa34b302acfebc33",
+        "size": 257457318,
+        "notes": "## What's new\n\n- **Connect BigBrain on this Mac in one click.** Local BigBrain now sets itself up from a single **Connect BigBrain on this Mac** button. Ficus finds your BigBrain install and its vault, so you no longer write a bindings file or copy a client ID by hand. End-to-end use with the BigBrain app on a packaged Mac install has not been verified yet.\n- **Clearer shared BigBrain vaults.** The vault handle field explains what it is for, BigBrain shows its desktop app icon, and new shared vaults on Ficus Cloud get addresses that start with your instance's name.\n- **BigBrain connections shut down cleanly.** Closing a BigBrain connection no longer hangs when a process it started keeps running in the background.\n- **Icons that follow your theme.** The Dock icon follows the theme of the window you're using, and the app's icons and favicon match each built-in theme.\n- **Easier sign-in to attached installations.** Signing in to an attached installation now starts with browser sign-in, with the in-app passkey as the alternative, and the passkey page is clearer.\n- **Chat shows more.** Tool calls that write files show their full content in chat, and the composer's context ring shows a whole-number percentage.\n- **Smaller fixes.** Connection lifecycle logging makes dropped live updates easier to diagnose.\n\nDesktop source: `c7c165a556cdb8b2f0ea43f2105b84c2a4a4a703`\n\nBundled Core: `ba2ec703287cd9c5cccb0c4d26b5a0b9e95f2deb`"
       }
     }
   ]
