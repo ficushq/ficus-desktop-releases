@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.21",
+  "currentRelease": "0.5.22",
   "releases": [
     {
-      "version": "0.5.21",
+      "version": "0.5.22",
       "updateTo": {
-        "version": "0.5.21",
-        "name": "0.5.21",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.21/Ficus-0.5.21-darwin-arm64.zip",
-        "sha256": "c6b88af6ea721829db012bce48c30dfdfeb7eb1e69ac49d6aa34b302acfebc33",
-        "size": 257457318,
-        "notes": "## What's new\n\n- **Connect BigBrain on this Mac in one click.** Local BigBrain now sets itself up from a single **Connect BigBrain on this Mac** button. Ficus finds your BigBrain install and its vault, so you no longer write a bindings file or copy a client ID by hand. End-to-end use with the BigBrain app on a packaged Mac install has not been verified yet.\n- **Clearer shared BigBrain vaults.** The vault handle field explains what it is for, BigBrain shows its desktop app icon, and new shared vaults on Ficus Cloud get addresses that start with your instance's name.\n- **BigBrain connections shut down cleanly.** Closing a BigBrain connection no longer hangs when a process it started keeps running in the background.\n- **Icons that follow your theme.** The Dock icon follows the theme of the window you're using, and the app's icons and favicon match each built-in theme.\n- **Easier sign-in to attached installations.** Signing in to an attached installation now starts with browser sign-in, with the in-app passkey as the alternative, and the passkey page is clearer.\n- **Chat shows more.** Tool calls that write files show their full content in chat, and the composer's context ring shows a whole-number percentage.\n- **Smaller fixes.** Connection lifecycle logging makes dropped live updates easier to diagnose.\n\nDesktop source: `c7c165a556cdb8b2f0ea43f2105b84c2a4a4a703`\n\nBundled Core: `ba2ec703287cd9c5cccb0c4d26b5a0b9e95f2deb`"
+        "version": "0.5.22",
+        "name": "0.5.22",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.22/Ficus-0.5.22-darwin-arm64.zip",
+        "sha256": "981caacea4d11c852dd8a67583376bf609c72bb18ca24056dbbef896af05b678",
+        "size": 257596850,
+        "notes": "## What's new\n\n- **Shared BigBrain vaults belong to your Ficus server.** Managed shared vaults are now owned by the instance, appearing as the member \"Ficus\" in BigBrain, rather than by one person. Anyone allowed to manage BigBrain can manage every vault, and connecting an owner device has moved under Advanced.\n- **Invite and manage vault members from Ficus.** Invite people to a shared vault, change their access between read and write, cancel invites and remove members from the vault's card in Settings or from the CLI. Each person gets their own name and attribution in the vault.\n- **Clearer shared vault setup.** A vault's card shows whether Ficus can really read it and what to do if not, you can attach squads straight from the vault, Ficus repairs a vault's read connection on its own, and a vault can reuse the name of one you deleted.\n- **New shared vaults work right after an upgrade.** Ficus restarts the BigBrain gateway when it is updated and checks what is actually serving, so new vault addresses no longer fail with an \"unavailable\" invitation error while Ficus reports BigBrain as available.\n- **Menus open on hover.** The squad More menu, the send-mode chevron, the theme flyout, chats, agent view, Arrange, Filters, the notifications bell and the context ring (with a confirmation before Compact) now open when you hover. A short delay keeps them from flashing open as you pass, and they don't open while you're dragging.\n- **See which work an agent is on.** Agent rows in a squad's Chats list start with the number of the work stream they're assigned to, linked to it.\n- **Live updates recover on their own.** If the connection for live updates goes quiet, Ficus replaces it and catches up, so agent status and open questions no longer stay stale after a network hiccup.\n- **Question alerts reach your phone.** Push notifications for agent questions and work-stream reviews no longer fail to send.\n- **Smaller fixes.** The Inbox hover popup closes when you move away after clicking Mark all read or Read, and the Notify pill lines up with the controls around it.\n\nDesktop source: `da25fb72fe7d92e4944a8d590fce6ac6fcd75ea9`\n\nBundled Core: `764fae6689cd5570589ffb20efc04031632b5b3a`"
       }
     }
   ]
