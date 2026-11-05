@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.25",
+  "currentRelease": "0.5.26",
   "releases": [
     {
-      "version": "0.5.25",
+      "version": "0.5.26",
       "updateTo": {
-        "version": "0.5.25",
-        "name": "0.5.25",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.25/Ficus-0.5.25-darwin-arm64.zip",
-        "sha256": "5afca71c5d4abaddbf6cd21f3d26934b7a93acab66716b6ba6517ccb8fff7e5e",
-        "size": 259916792,
-        "notes": "## What's new\n\n- **Control queued messages.** Each message waiting for an agent now has its own Cancel control and can switch between Interrupt and Follow up without losing its place. Queued interrupts offer Send now, and clearing the queue removes only the messages you sent.\n- **Review with the agent beside you.** The review screen for an approval gate shows the producing agent's chat, so you can ask questions and have it refine its work in place before you decide. Decisions record the revision they were made on, and a decision on an outdated revision is refused.\n- **Decision briefs for reviews.** Agent work that needs your approval now opens with a short brief: the decision, the agent's recommendation, what approving does and the risks. Blocked reviews explain plainly what they are waiting for.\n- **Unstick workflows in one step.** When a step reaches its attempt limit, Raise limit and Remove limit buttons on the Action Center card and the work stream page get it moving again.\n- **Clearer recovery after interruptions.** Agents say when a restart interrupted them, and repeated failures stop for a simple Continue or Stop decision instead of retrying without limit.\n- **Share images and files with work streams.** Chat images and files can be attached to a work stream by reference, without copying them, and agents can view stored images directly.\n- **See a squad's storage.** Squad settings has a Storage page showing workspace and agent storage, and the storage warning banner now names its level and can be dismissed for a week.\n- **Feed polish.** Dismiss works again for every completion in the Feed, the Updates count comes from the server, and the filters and Needs you sections are tidier.\n- **Pull requests are followed to merge.** Work that finishes with a pull request now watches it by default, so the work stream completes when the pull request merges instead of waiting indefinitely. GitHub event rules can also match on the pull request's author.\n- **More reliable workspaces.** Workspace startup and provisioning retry lock timeouts, scale with the host's CPUs and report whether pressure comes from the host or the workspace.\n- **Smaller fixes.** Passkey registration accepts only the attestation formats browsers send, pending chat messages clear correctly, the sandbox status pill and several buttons match your theme, and a new CLI command previews idle consultants and makes them dormant.\n\nDesktop source: `de90cf6512cce46deeb7d537d5f5f8212ade66fb`\n\nBundled Core: `6a0b12b603b7ee3066da00dab09cca8f2e102c62`"
+        "version": "0.5.26",
+        "name": "0.5.26",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.26/Ficus-0.5.26-darwin-arm64.zip",
+        "sha256": "5f9d7fd964b9a4913c2abd0fcd90950050911d6c7100f5efc407cbe1e9aa92ca",
+        "size": 259957206,
+        "notes": "## What's new\n\n- **Background monitors can use your integrations.** Agent monitors can run integration command-line tools such as GitHub's with a read-only credential that expires on its own, so watching a pull request or CI run from a monitor now works.\n- **Warnings before a slot claim expires.** Agents holding a capacity slot are told shortly before their claim runs out, so they can renew or release it in time.\n- **Agents recover from failed resumes.** If an agent's resumed run fails while it holds a slot or a workflow attempt, Ficus wakes it again instead of leaving the work stuck.\n- **Running apps first.** A squad's Local Apps list now shows running apps at the top.\n- **Clearer selection in every theme.** Selected rows look distinct from hovered ones in all built-in themes, and the selected squad chat row and file tree row keep their highlight when you hover them.\n- **Workspace settings stay protected.** Workspace file views, uploads and writes now leave the workspace settings directory alone, and agent sandbox controls are offered only to people allowed to use them.\n- **Smaller fixes.** The Subagents tab shows its activity as one evenly spaced pill, and database connection timeouts are applied more reliably.\n\nDesktop source: `e6016f0bcabfbe7e1d40b88a97149fb12955264e`\n\nBundled Core: `2ab512092ed253afb77ccbf34751a9073fd847c4`"
       }
     }
   ]
