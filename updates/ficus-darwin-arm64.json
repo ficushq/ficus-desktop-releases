@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.26",
+  "currentRelease": "0.5.27",
   "releases": [
     {
-      "version": "0.5.26",
+      "version": "0.5.27",
       "updateTo": {
-        "version": "0.5.26",
-        "name": "0.5.26",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.26/Ficus-0.5.26-darwin-arm64.zip",
-        "sha256": "5f9d7fd964b9a4913c2abd0fcd90950050911d6c7100f5efc407cbe1e9aa92ca",
-        "size": 259957206,
-        "notes": "## What's new\n\n- **Background monitors can use your integrations.** Agent monitors can run integration command-line tools such as GitHub's with a read-only credential that expires on its own, so watching a pull request or CI run from a monitor now works.\n- **Warnings before a slot claim expires.** Agents holding a capacity slot are told shortly before their claim runs out, so they can renew or release it in time.\n- **Agents recover from failed resumes.** If an agent's resumed run fails while it holds a slot or a workflow attempt, Ficus wakes it again instead of leaving the work stuck.\n- **Running apps first.** A squad's Local Apps list now shows running apps at the top.\n- **Clearer selection in every theme.** Selected rows look distinct from hovered ones in all built-in themes, and the selected squad chat row and file tree row keep their highlight when you hover them.\n- **Workspace settings stay protected.** Workspace file views, uploads and writes now leave the workspace settings directory alone, and agent sandbox controls are offered only to people allowed to use them.\n- **Smaller fixes.** The Subagents tab shows its activity as one evenly spaced pill, and database connection timeouts are applied more reliably.\n\nDesktop source: `e6016f0bcabfbe7e1d40b88a97149fb12955264e`\n\nBundled Core: `2ab512092ed253afb77ccbf34751a9073fd847c4`"
+        "version": "0.5.27",
+        "name": "0.5.27",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.27/Ficus-0.5.27-darwin-arm64.zip",
+        "sha256": "0ae4b0a094a1e2e773da317419223dc44a6031fa313fafb2dae271ef4389c045",
+        "size": 261599818,
+        "notes": "## What's new\n\n- **Find in page.** Press Command+F in any Ficus window to search the text on screen, with Command+G and Shift+Command+G to move between matches. Find is also in the Edit menu.\n- **Search a chat's full history.** A search panel in agent chats finds messages across the whole conversation, not just what's loaded, and jumps straight to any result.\n- **See when teammates are typing.** When several people have the same agent chat open, a typing bubble with the teammate's name appears above the composer while they write.\n- **Diagrams in Markdown.** Mermaid diagrams in chat messages, work stream descriptions, briefs and plans now render as diagrams, with a toggle to view the source.\n- **A steadier working indicator.** The indicator stays up after you send a message until the agent's new run starts, and no longer drops when the connection replays the previous turn.\n- **Agents can ask before restarting your services.** Agents can now ask for your approval to restart a service they manage, instead of the request being refused.\n- **Faster, more reliable new hosts.** Setting up a new Ficus Cloud host takes fewer package-install passes, retries slow package sources, and reports its progress through each setup phase.\n- **Smaller fixes.** Agent reply timestamps line up with their messages, squad active-agent counts include consultants, and running monitors count as agent activity.\n\nDesktop source: `6e9ff312ecb72b4a264d065a14ead724eb9afa56`\n\nBundled Core: `998ae858c226280e017bd492c8291ad83742c79d`"
       }
     }
   ]
