@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.27",
+  "currentRelease": "0.5.28",
   "releases": [
     {
-      "version": "0.5.27",
+      "version": "0.5.28",
       "updateTo": {
-        "version": "0.5.27",
-        "name": "0.5.27",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.27/Ficus-0.5.27-darwin-arm64.zip",
-        "sha256": "0ae4b0a094a1e2e773da317419223dc44a6031fa313fafb2dae271ef4389c045",
-        "size": 261599818,
-        "notes": "## What's new\n\n- **Find in page.** Press Command+F in any Ficus window to search the text on screen, with Command+G and Shift+Command+G to move between matches. Find is also in the Edit menu.\n- **Search a chat's full history.** A search panel in agent chats finds messages across the whole conversation, not just what's loaded, and jumps straight to any result.\n- **See when teammates are typing.** When several people have the same agent chat open, a typing bubble with the teammate's name appears above the composer while they write.\n- **Diagrams in Markdown.** Mermaid diagrams in chat messages, work stream descriptions, briefs and plans now render as diagrams, with a toggle to view the source.\n- **A steadier working indicator.** The indicator stays up after you send a message until the agent's new run starts, and no longer drops when the connection replays the previous turn.\n- **Agents can ask before restarting your services.** Agents can now ask for your approval to restart a service they manage, instead of the request being refused.\n- **Faster, more reliable new hosts.** Setting up a new Ficus Cloud host takes fewer package-install passes, retries slow package sources, and reports its progress through each setup phase.\n- **Smaller fixes.** Agent reply timestamps line up with their messages, squad active-agent counts include consultants, and running monitors count as agent activity.\n\nDesktop source: `6e9ff312ecb72b4a264d065a14ead724eb9afa56`\n\nBundled Core: `998ae858c226280e017bd492c8291ad83742c79d`"
+        "version": "0.5.28",
+        "name": "0.5.28",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.28/Ficus-0.5.28-darwin-arm64.zip",
+        "sha256": "ed5ec2531992d87fb823c33cb7f6a818105402253914e6ed931552ab352d9f91",
+        "size": 274175000,
+        "notes": "## What's new\n\n- **Run Ficus under a path prefix.** One install now serves the web app and its documentation both at the root and under a path such as `/ficus` behind a reverse proxy, with no rebuild. The prefix comes from the server address you configure.\n- **Attached installations open at the right address.** When an attached installation's server address includes a path, Ficus Desktop now opens the window at that path, using the older base-path setting only as a fallback.\n- **Shared workflow presets keep receiving updates.** Editing one field of a shared workflow preset no longer freezes it: later updates to the preset are merged in, and anything held back is shown so you can review it.\n- **Smoother pull request delivery.** The agent responsible for delivering a pull request is told so plainly, is woken when the pull request is ready, and treats an already-mergeable pull request as ready for auto-merge instead of leaving it for a person.\n- **Faster host setup.** New and re-run Ficus Cloud host setup skips redundant package work and boots faster.\n- **Updated web app foundations.** The web app moves to newer styling, routing and terminal libraries, and the agent SDK is updated. You shouldn't notice changes beyond small visual polish.\n- **Smaller fixes.** The chat search button no longer takes a header row of its own, question answer and suggestion chips have rounded-rectangle corners, and the squad chat header and Feed rows fit better on phones.\n\nDesktop source: `1ac1f16181a2618ccabaa6027e113ac8de2944e6`\n\nBundled Core: `acdb7657a0821a6823b1543c4a4051f9fc7d808c`"
       }
     }
   ]
