@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.28",
+  "currentRelease": "0.5.29",
   "releases": [
     {
-      "version": "0.5.28",
+      "version": "0.5.29",
       "updateTo": {
-        "version": "0.5.28",
-        "name": "0.5.28",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.28/Ficus-0.5.28-darwin-arm64.zip",
-        "sha256": "ed5ec2531992d87fb823c33cb7f6a818105402253914e6ed931552ab352d9f91",
-        "size": 274175000,
-        "notes": "## What's new\n\n- **Run Ficus under a path prefix.** One install now serves the web app and its documentation both at the root and under a path such as `/ficus` behind a reverse proxy, with no rebuild. The prefix comes from the server address you configure.\n- **Attached installations open at the right address.** When an attached installation's server address includes a path, Ficus Desktop now opens the window at that path, using the older base-path setting only as a fallback.\n- **Shared workflow presets keep receiving updates.** Editing one field of a shared workflow preset no longer freezes it: later updates to the preset are merged in, and anything held back is shown so you can review it.\n- **Smoother pull request delivery.** The agent responsible for delivering a pull request is told so plainly, is woken when the pull request is ready, and treats an already-mergeable pull request as ready for auto-merge instead of leaving it for a person.\n- **Faster host setup.** New and re-run Ficus Cloud host setup skips redundant package work and boots faster.\n- **Updated web app foundations.** The web app moves to newer styling, routing and terminal libraries, and the agent SDK is updated. You shouldn't notice changes beyond small visual polish.\n- **Smaller fixes.** The chat search button no longer takes a header row of its own, question answer and suggestion chips have rounded-rectangle corners, and the squad chat header and Feed rows fit better on phones.\n\nDesktop source: `1ac1f16181a2618ccabaa6027e113ac8de2944e6`\n\nBundled Core: `acdb7657a0821a6823b1543c4a4051f9fc7d808c`"
+        "version": "0.5.29",
+        "name": "0.5.29",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.29/Ficus-0.5.29-darwin-arm64.zip",
+        "sha256": "710beb37e18603046a64df651560ece1ce5f29ec6907c5da5e7f30ba564a502f",
+        "size": 264748913,
+        "notes": "## What's new\n\n- **Give your agents a public voice.** Squads can set how their agents write commit messages, pull requests, review replies and comments. Ficus can draft a voice from your GitHub writing and shows its progress while it works. Voices has its own settings page, next to Agents (previously Agent Types).\n- **Leftover processes are cleaned up.** Dev servers and other background processes left behind by finished agent work, or started under a capacity slot that is released or expires, are now stopped automatically, so they don't keep slowing the workspace.\n- **Fairer capacity sharing.** Capacity slots can share one budget across every squad on the same host, can follow that budget instead of a fixed cap, and let long-waiting work move up the queue. Settings shows the budget each pool is using.\n- **Steadier hosts under memory pressure.** Ficus Cloud hosts protect their own memory, so one busy workspace can no longer stall setup and health checks for the others.\n- **A lighter web app.** An open tab now makes far fewer list requests, which keeps the app and its server responsive on busy instances.\n- **Newer default models.** The Lite, Fast and Exhaustive model tiers move to the newest Claude models.\n- **More precise event rules.** Event rule conditions can match labels or assignees that do *not* include a value, and GitHub and Linear labels are compared case-insensitively.\n- **Smoother reviews and delivery.** Agents re-request review after fixing requested changes, answers to questions reach the delivering agent after its step ends, and the delivering agent can request rework when needed.\n- **Smaller fixes.** Desktop windows stay draggable while a dialog is open, the frosted glass effect is back, interrupted server updates rebuild what they missed, and agents get leaner, more accurate guidance.\n\nDesktop source: `8ca94c003356d4ff400cc70b867ceacfece2628d`\n\nBundled Core: `6f63628924cde85267af6062edb84f9d49cfcbc8`"
       }
     }
   ]
