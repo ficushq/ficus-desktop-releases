@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.29",
+  "currentRelease": "0.5.30",
   "releases": [
     {
-      "version": "0.5.29",
+      "version": "0.5.30",
       "updateTo": {
-        "version": "0.5.29",
-        "name": "0.5.29",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.29/Ficus-0.5.29-darwin-arm64.zip",
-        "sha256": "710beb37e18603046a64df651560ece1ce5f29ec6907c5da5e7f30ba564a502f",
-        "size": 264748913,
-        "notes": "## What's new\n\n- **Give your agents a public voice.** Squads can set how their agents write commit messages, pull requests, review replies and comments. Ficus can draft a voice from your GitHub writing and shows its progress while it works. Voices has its own settings page, next to Agents (previously Agent Types).\n- **Leftover processes are cleaned up.** Dev servers and other background processes left behind by finished agent work, or started under a capacity slot that is released or expires, are now stopped automatically, so they don't keep slowing the workspace.\n- **Fairer capacity sharing.** Capacity slots can share one budget across every squad on the same host, can follow that budget instead of a fixed cap, and let long-waiting work move up the queue. Settings shows the budget each pool is using.\n- **Steadier hosts under memory pressure.** Ficus Cloud hosts protect their own memory, so one busy workspace can no longer stall setup and health checks for the others.\n- **A lighter web app.** An open tab now makes far fewer list requests, which keeps the app and its server responsive on busy instances.\n- **Newer default models.** The Lite, Fast and Exhaustive model tiers move to the newest Claude models.\n- **More precise event rules.** Event rule conditions can match labels or assignees that do *not* include a value, and GitHub and Linear labels are compared case-insensitively.\n- **Smoother reviews and delivery.** Agents re-request review after fixing requested changes, answers to questions reach the delivering agent after its step ends, and the delivering agent can request rework when needed.\n- **Smaller fixes.** Desktop windows stay draggable while a dialog is open, the frosted glass effect is back, interrupted server updates rebuild what they missed, and agents get leaner, more accurate guidance.\n\nDesktop source: `8ca94c003356d4ff400cc70b867ceacfece2628d`\n\nBundled Core: `6f63628924cde85267af6062edb84f9d49cfcbc8`"
+        "version": "0.5.30",
+        "name": "0.5.30",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.30/Ficus-0.5.30-darwin-arm64.zip",
+        "sha256": "7b762abcfad74a20465989bed8b3dedb9e291a170b2464faed8bc34ce13c1e67",
+        "size": 264876466,
+        "notes": "## What's new\n\n- **Derive a voice from any connected GitHub account.** Public voices can now be drafted from a GitHub account you choose rather than a squad's connection. Onboarding offers an optional step to create a voice, and Settings → Voices lets you assign voices to squads.\n- **Linear from the command line.** Squads with an enabled Linear connection get an authenticated `linear` command and matching agent skill, so agents can view, create and update issues and comment directly.\n- **Groundwork for the Ficus Linear app.** Linear connections can now use an OAuth agent-app mode alongside personal API keys. Delegating or mentioning Ficus in Linear is not available yet; it switches on in a later release.\n- **Leaner, sharper agent guidance.** Agent prompts and skills were rewritten and trimmed, with detailed procedures moved into command help where agents need them. Behaviour checks showed no regression.\n- **Clearer notice for late answers.** If you answer a question after its work stream has finished, Ficus says so plainly instead of implying the answer was delivered.\n- **Agents know who's talking.** Each chat message now tells the agent which person sent it, so agents address the right person without extra lookups.\n- **Smaller fixes.** Integration setup stops if a downloaded tool fails its integrity check, undeliverable answers no longer raise false squad-stall alerts, and restart notices are shorter.\n\nDesktop source: `c24c6d834895bbed4e4c4f2508dd360fcc7c000b`\n\nBundled Core: `45507ab989601423043fa5657529ac3966db2130`"
       }
     }
   ]
