@@ -1,15 +1,15 @@
 {
-  "currentRelease": "0.5.31",
+  "currentRelease": "0.5.32",
   "releases": [
     {
-      "version": "0.5.31",
+      "version": "0.5.32",
       "updateTo": {
-        "version": "0.5.31",
-        "name": "0.5.31",
-        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.31/Ficus-0.5.31-darwin-arm64.zip",
-        "sha256": "5840929e8e6e0d8902e99bd3039bb7d3225ecd6ab0e776f1c4685c39faa040d8",
-        "size": 265320113,
-        "notes": "## What's new\n\n- **Work stream summaries, on by default.** Each busy active work stream keeps a one-line summary, shown in a peek card, in lists and on the stream's page. Summaries make Lite-tier model calls for busy active streams (at most one every 5 minutes per stream) and send participant message text to the Lite tier's provider; their cost appears in Settings → Spend as `lite:stream-summary`. Turn them off in Settings → Features → Work stream summaries.\n- **One Summaries switch on every list.** The Summaries switch on lists starts on and is remembered per list. If you had it turned off before, you'll see summaries once after upgrading; turn it off again and it stays off.\n- **Agent chats in floating windows.** Open agent chats and the Assistant in desktop-style floating windows. Floating windows, the Assistant and dialogs now stay clear of the macOS window buttons.\n- **Inbox and Action Center without the dimmed page.** The inbox and Action Center no longer dim the page. A click outside closes them and also acts on whatever it lands on.\n- **Activity shows active work.** Activity has an Active work list with stream context and a details panel, behind a searchable Active work pill, with less noise.\n- **Ficus in Linear.** Install the Ficus agent app in your Linear workspace: delegate or mention Ficus on an issue, see work stream progress written back to the Linear session, and pick routed teams from a list. Integration cards now show and change which squads use each connection and finish setup in place.\n- **Newer model defaults.** The agent SDK moves to version 1.6, GPT-6 tier entries move to GPT-6.2, and the newest Anthropic models are offered in model overrides. Spend tracks ChatGPT Pro, Go and Business Premium plans.\n- **Answers always reach someone.** Answers to questions whose asking step has ended are passed on instead of dropped, and are never recorded as delivered to an agent that has stopped.\n- **Settings → Logs fills the page.** Logs stay readable and responsive while following, even with a full 10,000-line buffer.\n- **Smaller fixes.** The chat composer folds its controls into a More menu instead of wrapping, delivery status moves onto the pull request badge, disabled providers are no longer reported as unhealthy, and channel agents stay dormant and reclaim storage instead of being terminated.\n\nDesktop source: `c7b178f56cc9bb1861490b25028d9d744469ee71`\n\nBundled Core: `c5d20fce076681376049f190d20c7cb20abcf463`"
+        "version": "0.5.32",
+        "name": "0.5.32",
+        "url": "https://github.com/ficushq/ficus-desktop-releases/releases/download/v0.5.32/Ficus-0.5.32-darwin-arm64.zip",
+        "sha256": "6b473bdf58d61492239c7e2df38be38779f2d45258c364e3e7fd86855d6468c8",
+        "size": 264875647,
+        "notes": "## What's new\n\n- **Choose your instance's default voice.** Settings → Voices can set the voice every squad uses unless it picks its own. Saving a voice during onboarding makes it the default, and Ficus tells you how many squads the change affects.\n- **Pick a model for one agent.** A chat's Agent info tab can override an agent's model or tier, with **Switch now** to move a running agent over straight away. The same override is available in the API and CLI.\n- **Squad manager chats open where they belong.** Asking the Assistant for a squad manager's chat opens that squad's Chats tab. Old `/chat` links redirect, and agents without a squad get a stable `/assistant/agents` address.\n- **Smaller fixes.** Switching models during a provider failover no longer mixes up a reply, the Notion CLI is updated, and the app's developer tooling moves to TypeScript 6.\n\nDesktop source: `ff703a82f301b64229e606b435df714b60a70f02`\n\nBundled Core: `5dae4d879e99459ab0d4b22dd611d5e293fc54fe`"
       }
     }
   ]
